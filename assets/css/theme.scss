@@ -387,17 +387,7 @@ section {
 /** welcome section **/
 #welcome {
     position: relative;
-    .tvl-title {
-        font-weight: bold;
-        font-size: 28px;
-    }
-    .tvl-value {
-        color: #FBC042;
-        font-weight: bold;
-        font-size: 48px;
-        line-height: 60px;
-        margin-bottom: 25px;
-    }
+    margin-bottom: 150px;
     .welcome {
         &__photo {
             position: relative;
@@ -551,9 +541,10 @@ section {
             }
         }
         &__text {
-            position: relative;
+            position: absolute;
+            bottom: -50px;
+            left: 0;
             width: 100%;
-            top: -170px;
             font-size: 18px;
             z-index: 10;
             h1 {
@@ -702,131 +693,3 @@ section {
     }
 }
 /** END more section **/
-
-
-/** roadmap section **/
-#roadmap {
-    padding-top: 50px;
-    padding-bottom: 100px;
-    background: #1A0B28;
-    margin-bottom: 176px;
-    .roadmap-container {
-        width: fit-content;
-        margin: auto;
-        position: relative;
-    }
-    .roadmap-quarter {
-        position: absolute;
-        &-label {
-            background: $color_pink;
-            padding: 5px;
-            width: fit-content;
-            font-size: 20px;
-            font-weight: bold;
-            margin-bottom: 8px;
-        }
-        &-list {
-            padding-left: 25px;
-            font-weight: 500;
-        }
-        &--first {
-            top: 30px;
-            left: -70px;
-        }
-        &--second {
-            top: -30px;
-            left: 250px;
-        }
-        &--third {
-            top: 250px;
-            left: -140px;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-            .roadmap-quarter-list {
-                text-align: right;
-                list-style-position: inside;
-            }
-        }
-        &--fourth {
-            right: -100px;
-            top: 300px;
-        }
-    }
-}
-
-.pool-card {
-    background: rgba(255,255,255,0.06);
-    border-radius: 16px;
-    padding: 15px;
-    margin-right: 8px;
-    margin-left: 8px;
-    &-info {
-        &-mfo {
-            font-weight: bold;
-            font-size: 16px;
-        }
-        &-tvl {
-            font-weight: 500;
-            font-size: 14px;
-            opacity: 0.7;
-        }
-        &-apt {
-            color: $color_pink;
-            font-size: 24px;
-            font-weight: bold;
-            margin-bottom: 7px;
-        }
-    }
-    &-btn {
-        width: 100%;
-        height: 40px;
-
-        line-height: 0;
-        margin: 0 !important;
-    }
-}
-
-
-/** END roadmap section **/
-
-/** sponsor section **/
-
-
-#sponsor {
-    .sponsor {
-        &-lego {
-            border: 1px solid #2B173F;
-            box-sizing: border-box;
-            border-radius: 32px;
-            padding: 15px;
-            margin-top: auto;
-            min-width: 185px;
-            height: 185px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            a {
-                display: block;
-            }
-        }
-        &-lego-container {
-            gap: 20px;
-            display: flex;
-            flex-wrap: wrap;
-        }
-        &-title {
-            margin-bottom: 30px;
-        }
-        &-backers {
-            margin-bottom: 50px;
-        }
-        &-partners {
-
-        }
-    }
-    margin-bottom: 176px;
-}
-
-/** END sponsor section **/
-
